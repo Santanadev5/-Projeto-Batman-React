@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: white;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 20px;
+}
+
+.footer-navegation {
+    display: none;
+
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

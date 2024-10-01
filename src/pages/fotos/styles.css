@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    }
+    
+li:hover {
+    color: rgb(204, 0, 0);
+}
+#logo {
+    width: 100px;
+    height: auto;
+}
+body {
+    background-color: rgb(204, 0, 0);
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.cards-contentx {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.banner-1 {
+    background-image: url('https://img.elo7.com.br/product/zoom/3FBBEDD/big-poster-filme-batman-2022-90x60-cm-lo006-poster.jpg');
+    
+}
+.banner-2 {
+    background-image: url('https://br.web.img3.acsta.net/pictures/22/03/02/19/26/3666027.jpg');
+}
+.banner-3 {
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/batman-robert-pattinson-2022.jpg');
+}
+
+.actor-cards-container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content2 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.banner-4 {
+    background-image: url('https://media.gq-magazine.co.uk/photos/63b7fa602ef9ea0a352d5e2e/4:3/w_1440,h_1080,c_limit/colin-farrell-penguin.jpg');
+    
+}
+.banner-5 {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhIVFRUVFxUVFRgVFRUVFRUVFRUXFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICUtLTUtLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLy0tLS0tLf/AABEIAK4BIgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAQIDBQYABwj/xAA8EAABAwIEBAQCCAQGAwAAAAABAAIRAwQFEiExIkFRYQZxgZETMgcjQqGxwdHhUnLw8RQVM0NikhaC0v/EABoBAAIDAQEAAAAAAAAAAAAAAAIDAQQFAAb/xAAsEQACAgEEAQQBBAEFAAAAAAAAAQIRAwQSITFBEyIyUQUUYXGB8FKRobHB/9oADAMBAAIRAxEAPwDzOswwoqQRV18qGoLSl8jPi/aI9QFE1AoCEqaGRY0BPypGpzDqoRLJa1CBKHVneEZAqwo8sUnwDik2iNPY2VLQti5FijCCGNvlkymkDMoKanTCc8QmMTVFIXbYfb4hVYIY6AhTdPL8ztUgcllMbb8i1FLwPfVD3aiFBeFlMS7nsBuUlcgAuOkKouXueZcf2CVkybV+47Hjt/sOrXUzoPTX70KWQNt9fTZSvqAcpH9bqJzlSk7LaVdDRC57YXNKcO/JCEdSqFpkeqsaFQOEhVpCQEjYwpjKgXGy0cmFdQfmE+hSkJvYvoakhKSulQSHYLiRoVA8CYXrXh76RbZwDarQ0jtovFVwcpTD3cUz6TbdYfdCOAz2Cocb+j61e0upuDTuvF7W+ezUOI9VZnxNcBsfFd7qbQSrwytx3DxRquYDMFVqfc13PcXOMkqMpYD5ZyRNKbKGzqHEpQUxOaFFk0LK5OyLl24L02X10NEPbhE126KGjTd0WlJe4z4/ER7UO5F1GKJluXGEMotvgKLSXJHQZKdUpQdk9zXUzEpj6pKhJJU+wrbdro6rVkQn29Gd0ONSjm6BDH3O2S3tVILtY2hMuxqutKkHVR3dWSrF+0r17yGqmMClhNQtB2MCUFIXLmISRK0O01kEH2UNS3BjhgkQBrvrJP3qSzc2XOd107ctVLQfmcXmIGjI5COg57eyCVSDVxA7XCDUntyH3fgT6FT/AOS5Wuc6dDlE7zu4x20Hmey3mAYZlp6gFzhJ6TyaO23siquAS2CYA5t+YmcxM8pOs9k+OguN+ShP8olPbfB5fVw7LE7xBjaQNfXf2QdxRLdTv+X9EL0q8wME6CGNGjRuTzJJ25dVnr/Ai50kQNoGp0VfLpZRXRbxa6E/Jkmgekflp96jIVze4Q5knkqmq2CqUk06ZchNS6HW1fKe3NHZpVYjqPyjyRwfgmS8j3JEpSJgAwrkpCQIaCJHO5KMqQUXHkmOYQuOpkJSOKkhMchomxhSJSFyCgrElK0pIXFdRyJ5XIfVcooPeasjVT0yAhToVMNVsox5IDu3aocvKmud0MSq83yWILgSo8ndNzLi1JCVyNVD6G6KLktDKdkr6adGNIS5WxmdIXJISSuZw4vSSucEgC4kWEoCYuXHFbcNDZk8zA7Srfwkx1as1kcLeJxO0DYeZOqrcYsn04LxlzgOYJElvUgbb81vPo/tYtQ+NXF2vbN+yXp8bln2/QOrzqGn3Lm+Eaa0p5TAVhUdpCqDd1QZFLhHMu1/6gKP/wAkpZsr2uYe409Ct3dFdnlZ4Mk3aVhFdu6qLpu6uDf03DRwKpMTuB1QZqqy1p9100UeKbQsje0losTvWc3BUD6ocdFg6ppno9HF9FerGkNkIynxQjGpGMtzJC1RlqkCPsLAuMlNZ0IOTpAlCyc7yR9PDgjntyoGpiAB0QW30XVix417iQ0SNkypQnkoTifZROxQ9FysiU8VDa1qgHtRb7slCmprKkqTcX0RuCROe6VHKgAfC5zeiZKcKi44TKlSZly440lYaqRpUF06NUxlwtLckzP2toiuTqutA2ePZJWUDikt07HJWqLJjaObfRRXlOlrlKBlc1pOy7faqjvTp3bJLQ6ohhkwutrUjUhTW9PiKKEXSsCcly0ROCbSbJRJbumURBR0Du4JjQCb8ESiSwlQPouRtClL9xvwAobhgCmLHKN9E8yha/YJPnsJx7DjVp/4jMTLoYDJ4XNaYA5QZHotn4Ztw21ptGnD951Vd4Yoh1ASM3w6jhBiIcATv/MVdYY0NaGDYaeis6bAoT3/AGjM1mdyh6f+lmVxSrfteW5PqxmMscBmAkwJaSHdoKzP+ZVny7K5zA7KZg6nYDQEntC9eu7Vj2w706hZPEPCTaj5Lz66n70rUaPI+cbb/ljtH+QwtVOKX8IC8O2/xWl7J03BVN4jxDISznPJem4dYtoUhTYNGt/qV5JjkvuXD/n7Jeqi8WJK+RmhzLPnm64XRWPqmYLdehMnyI5HspbaoHOHCBCv61i4nPu4j5iGl20fMRMxzVM63yErNy43Hk2cOWEpIGYON3mQp2BNA4ie59pU1JhcYC7H0NyfKkFWFvmM8lf3FIBohC21iQAAjLiwcADMoZOzQwYti57K2uJBVJVYZ1WgFEzCgr2YldGSQObBKfJROakhXtOxB0TqmCmJCLciu9NMoCmlWVeyczcINT2KljceGDuCbCme0JpYoAojISJ5CaQuOobC5KuXEF/iI0QlFGXzTASWVHmVflFuZSjJRgRvpndQQrKvUEIB7VE40TCTfZBURuDjj1QdVT2FXK6UEOJh5FcGi2vnjkq+nVgoi8uA7YIJPnLngr441HkPp6jZNoM4hKJoPa1m+qipHiCOuhd9l5b2gIUdSyRVo4DmnVnBOKhVvtYUL6HZWlWIUdQDRRwEpMhwm9NBxlpc124ETImCJ81eWV45wFQjLmLtOgDjlnvCoj86ubETTjz/ABKOF9WJzKL5a5ZctrzouA1QFvUjQqzoNG5VuMrRm5I7BLirDXEkSAvKMfYG3DiPtcS3GP2LWNcWEh1VwaSXOPzHSBMD0WDxfDqlOq9r3T37co6LL/ISk0lXRs/iscI21Lst7e64B5KkvamZ8JoqlrYlNaNC7mdB67/gs/Jkckomxp8KUnLwiMj9fcrQ+EcNFV+uwWehbzwAKcHMYKF8IuYffktmhfgvRQV8MdGoWkY5vJwKmc0EckmzSSRga2GwZhAXVoVvq9u1VF1ZBckFKTMjQoQdUW9+iOrWqDNFT0BdldjLh8NZBzlrcbbDVkqqlMqalcolsWZnQVYmxBmFWWT4dqVeULxgB13UOycCg48lLUbBhRucuvHy4kKAFEVpd8Ei5KKTkign+jR1jrCSpUDQoqh6IeDzWm5GXGJI0TKicwqRpRDm8KHbYW6mVtYJ9sdU+q4SjLa1zCWjZBGFy4ClkSjyRvTQE+qIUZTBd8DgUUOSFp7owt2RxQubHG4I5pwvT1QNbdNC7e0D6aZZm/K43+3ZVrymLvUZyxRLYXwmU2z8WNZUyuZFPMW55nYiTEdwqS7ugwa7nYKXBrBtW1qnJmfTdnEkiWuaA7XsRm/9Y5pcs03KoPnsP9PjUbmuOv8Ac9BbWBAcDIOojooby6rkfUljeUvnTpAhUGH3NK1tmF1Vzi53ykaMEScvWJbz784V/bU2VW5mukOGhBkK5DI5qvNdWZmTEscratJ9tFBfNvQ0Z4Lp+YOzT0IM6eULIYg+tm+szTP2jJK3WMYRUAltbbYEbLE37XZzmOZ3X9Fm62Li6d/2zY0U4zXtr+lRFTJJRzhED+pQ9EZdef4fun/EkqvijXLL8ntWxf2OpUC46LQ4PSLdNkBg9EufoCfJaenZuB+Qj0XTfgtafGq3HNuagOjijbbFauxKgbaHoVPQtD0Si5RO7FHqF2JE7og2hjZC1LWOS4hkNS7lQfHlPqWygdRUMOFFdjrgWrIVt1p8baQ1ZeoiiVNZxJIjISCU4NXObCkpiEJ9ClmcAOaYVb+GLX4lZo7rhmOG6SRoaOA8I05D8Fy3jLIQFyi0aXov6PLq4ACUslqDu36KS1raQVp7luo8xte2xHtyok/Im16UiV2bhRVQLdoBazUq2weoQC3kqhzuJW+FbFDh+R2o+ANdiCVA16nuDqUMwKZdkw6JWqyjhCrAVZHYIoeRWXwBV/mXEJao1KGq3zG6TJ6DX70DaXYyKb6CC3RMJgSUA/FJ+zp/N+YTHXTT/ED/ADE/eUp5o+BixS8i29m6tUzVA4UwRncwBzmM65N47wtNRxr4Nvkphr/g1MragDYcwasIgRJme2qzNK9IIcDBB4XNMOafNGXuLmrTcxzQHOLSXN4Q4tIMuZHzabjqdEGPIoW0+eTsuN5GlJcf5/n/AIBY1VfV+HVMnMHCOjmu4tush232lFhWNVrc/Vu0O7Tq0945HyTRWIommdePOCD1EO98o3QleMxgQJ0B5DkO6rym1LcnyWlCLjsa4L+88XVKjYygHzVV8UktcT8xJ76H+/sglMwzlHbL6ucf/pDLJKfydhY8ccXwVBycwIag/iP/ACzH2On5olp1TYu0RXJuvo3u6bK31gB816pVxK2P2R7LwrALkNfMrY0cRzbFBJ8l3Fji42z0MVLYjZqZTZbnYBYll2UTQuyEFD/TS6bNfVtKR2hVl3Y0+UKsbeHqpmVCea6g4Qd9g9zYtQLrIclcmkSonUFDkvJZWnn9GD8V2pa2ViDuvRfHTYphedjdTEoayLjJJheGUmudDlpLjBaLaeYuG2iytIaop9w9wyuJhE0KxZElTQFVpjNDdlu/BXh6o0tqxodViaTRm9V7Z4a/0GeQS5tlzQ44tub8B4pnouRErku2X9qPBrxR0Cn3ZkKOgFqP5nkF8Q5lUxBUzRISNoANkpk9E9cdld0+gCrSOZG0HuYISRxhXlewAYHKIQ7aOyZOEmUjmndRF6JriEIQulwFHkmpDVWccIVZRElOtbofFJe3PTaACQdB2PYmNfJTGSXfkCcHLrwEvtZ4jUPkzYDlxc0Dc2Y1io4n/lxfirN9y1zczYA5AdlT3txEkevRHlWNRsjE53RW3LQ0wRB68ihXORNzUzBBFZGTvg04LjkfmTg9RKXTfz0QBUd8Vc6pO6jlIus6hSpLfVwUSmoMJIygz+m35D1C4JV5CqdPKpAVEyrmUoCsKq4FU0+R1FxBWv8AD9MnmsfQBJhbLw9bv5IJMt6dO7L80ilEp5tqijyOG6EusnpuR9vUVY0HoiKVQhSMxSUZWy3FYrjWQ1F5PJEikqmRJM24OElZjPpBd9WPNecs3Xof0hkZAAvOmHVPxfEwfyrXrcfRb4DZipUAK2F7gFN1IwIICx+A3gpvBK21XGaYpEzuE1lXFW08/wDhZakdCvY/Dtdpos15BeN3VeXlw6rRYB4jeCGctkDjY7T51BtI9X+OOq5UjLskApFHplj9SzyaqJ0RFq0N3TA3iXV6gnRaS45PMPngfcXXJdRrKINkpW6FTbuwdqqgl24WjzTSHks3Kurep9XCdj8lbKuiqv0C1yPvm6KsCXk4Y/F8QouGgmJ0np1TsLaz4z6bpcHAQ3MYJiCD10lCCjmfJ2aPclNrZqb2PMwcpBmdiYMbA8wErfTUmuExqhacU/Ade2D7VwP+2+dObfPpvoZ7KouXcRA1G09Vs7u4FagBmgPBzhwnK4HX1H3LFXYyktBkAnXaRyMdVOqiofH4sDTTc/n8kCVVGU6oU1qzmX0dKmdTji+zMfoh1e29mHWpcNYgdxr/AGR44brBnLbRSuYmootJbMbaHy5H8vZD5CgaCTGqShWc0y1xaeoMEKMrlBI9riDI5KwoODtv7KuDv09F1OoWmQijKiavs1/h+wa98Fb/AAy0bTGi828PYk3OATBO3IH91vKNUqJO2amnrYXzCkdbSq6lVcETSrOXWO28BDbMpwsz0T6d0VKy7KnkXX0Dmk4KJ5d3R7rhMNQdFwfqTS7PPfHQMBYVg1Xof0gkZQvPGbqTO1Dt8k9CJU7mPjWcq7CnNz8ey115XoGlDQOyInDi3xMHW3VhgVImoAOqGqMl5HKV6h4TwFgpteG6lKyT2j9FpfUycukgmnbugeQSLRizPRch9ZfZq/o8X2eHuEqHKQVNWqQVK0BwWpVs8ZdCUN08MEodzi0otjZEoo88AS45GVDqFeYc2WKmGpVvhb9CE2AjJ0C4ixVIGXdXGIHiVPdPJKHL9h4fofaNzP7c1pqlg2szI5s6cPERlP8AF6fssvh0GprtpPdbe3AyCNCQfaE7SRUotMVq5ODTRiq1KpQeabnEt5EfKZPPXg6wq+8dmkHzH6LSYqfsu1DvbsT31WXu2hrzEwNp6eaz9RHZ7V0XME9/L7AZSLnDVIVSLxy1eFWzv8LlH+44ew/crN2TZe0dwvTMHtQbdum0jXaW6aexV3R49zb/AGKOty7Ir+TG0qIDnN+zrP4e6rbm2gwNuR5eR7rQC2Od3r96Fu7fI/aZGoUTx8BQy8mfNNRFXVxZiJb5xz3jf291VVWqtKO0sxnZEuXLggDFaV6R4Svy+i0blnCT1jY+34LzZWnh/F3W9Sd2HR47dR3C4dgybZcnrVtUJOqsKNadIVJh9wHwWGWuEgjormjTQSlTN7DHdDgIJCcHBQkwUso0+CtNU2iZzgo3vAXOKgeUSAaMh49OgWDC3Pjs6BYUIkZ2o+RPa77SrNtN7RLgYXeF6AdVAIW7vLRppkEDZTY/B8bPMc81NOq9q8NXAbbsA6BeL1mxVPmvTvDNYmk0ExolTgp9ljRZFCUlLyaz/FnsuQgLP4vvXJXpw+jW3w+v+TxS/hQ29WEt6oGLTk/eeJivaWhAcEY0cIVbbHWFZOGgVrHyrKuRVwDjdWGHP3QDjqiLB3EV0ewJLgdiB1VW9wKsb86qmcdUOV0xmGNoNwimDUk78h+q3Vs0EcXT2H5LD4I2X79SesDkFq6ZNb6scLB838TlY0bqBV1qt9lBj9ZrnQzYEa+qzuIbyFf+KabaZDWiB/Ufgs5XcS2Vnap+9pl7SJbE0CP6pqWUipF8scCo5qgPRejYP/pvbyD3QJ5Fo17alYLw/oZWtw+u4GsBtwn/ALA/stTSVGCMnXJybX1X/ZNb24mOcyVUXlIuqE9THt+6u8IOYvPIcjzKr8SAa4HXafdPlFOFlfHJrI0U1alqSOWgVVdMDp5O+536FW93cRIA7qiuHfqqGekaeC2BkJE+qZMpipls5cuXLjjT+C8e+DUFKofq3mAT9hx5+R5r1akwrwJekeDfENV1DI7U04aCf4eQ9EEo2a/4/V7V6c/6NvUbskDSqpuJPJkqZmIORRVIdkmpSssoUTwhKWIOLoKJdWKIDgxvjzYLDNW08dVCYWLpbokZ2o+QdhN78N4cFpr3xQDTho1IWNpzMBFm3yjNK4HHOVUgc1JfPUr0XAnfVN8l5ywy5eiYIPqm+S5djcMZSuizzrl3w1yMs/psp//Z');
+}
+.banner-6 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/a/a5/Bella_Real_-_Trailer_Image.png/revision/latest?cb=20211228043452');
+}
+.actor-cards-container3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content3 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.banner-7 {
+    background-image: url('https://arthurtuoto.com/wp-content/uploads/2022/03/CAPA-930x620.jpg');
+    
+}
+.banner-8 {
+    background-image: url('https://legadodadc.com.br/wp-content/uploads/2022/03/The-Batman-ending-1-legadodadc.webp');
+}
+.banner-9 {
+    background-image: url('https://portalpopline.com.br/wp-content/uploads/2022/02/batman-pre-estreia.jpg');
+}
+
+@media(max-width: 768px){
+    .footer-navegation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    #banner{
+        background-position: 40%;
+    }
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer {
+        width: 100%;
+    }
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    .description {
+        width: 100%;
+
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}

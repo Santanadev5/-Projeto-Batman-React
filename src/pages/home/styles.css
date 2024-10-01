@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#root {
+    background-color: black;
+}
+
+#banner{
+   background-image: url('https://valkirias.com.br/wp-content/uploads/2022/03/valkirias-the-batman-capa-1.png');
+   background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.trailer {
+    width: 50%;  
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: white;
+    font-size: 19px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    width: 70%;   
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #cc0000;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+
+}
+
+@media(max-width: 768px){
+    .footer-navegation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    #banner{
+        background-position: 40%;
+    }
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer {
+        width: 100%;
+    }
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    .description {
+        width: 100%;
+
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
